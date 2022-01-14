@@ -18,9 +18,10 @@ a{
 .first-section{
     height: 100vh;
     width: 100%;
-    background-image: url(/Assets/Images/pool-bg.jpg);
+    background-image: url(../Assets/Images/pool-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 45vh 0 0 10rem;
 }
 
 /*========= Header which contains logo and navigation buttons ===============================*/
@@ -33,9 +34,9 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 5rem;
-
-
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 .logo-tools{
@@ -73,12 +74,25 @@ header button{
     background-color: #7c6f55;
     padding: 14px 33px;
     transition: background-color 0.2s linear;
+    cursor: pointer;
 }
 
 header button:hover{
     background-color: #615a4a;
 }
 
+#slogan{
+    font-size: 96px;
+    color: white;
+    font-weight: 500;
+}
+
+#slogan_sub{
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.9px;
+}
 /* ====================================== Utility and Experiment Classes =====================*/
 img{
     height: 41.5px;
