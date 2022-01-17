@@ -53,10 +53,13 @@ header{
 }
 
 .navigation li{
+    user-select: none;
     margin-right: 40px;
     cursor: pointer;
     display: flex;
     align-items: baseline;
+    padding: 3px;
+    border-bottom: 2px solid transparent;
 }
 
 .navigation li img{
@@ -66,7 +69,11 @@ header{
     transition: transform 0.2s linear;
 }
 
-.navigation li:hover img{
+.navigation .active{
+    border-bottom: 2px solid white;
+}
+
+.navigation .active img{
     transform: rotate(90deg);
 }
 
@@ -118,12 +125,16 @@ h3{
 
 .information{
     background-color: yellow;
-    visibility: hidden;
     position: absolute;
     top: 100%;
+    right: 50%;
+    transform: translateX(50%);
     height: 400px;
-    width: 400px;
-    z-index: 999;
+    width: 90%;
+}
+
+.invisible{
+    visibility: hidden;
 }
 
 .information h3{
