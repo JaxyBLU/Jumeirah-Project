@@ -1,0 +1,23 @@
+@media (max-width: 1200px){
+	*{
+        height: 500px;
+        width: 500px;
+		visibility: hidden;
+	}
+
+    body{
+        max-height: 500px;
+        max-width: 500px;
+        visibility: visible;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .forever{
+        visibility: visible;
+        color: white;
+    }
+}

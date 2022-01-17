@@ -124,6 +124,7 @@ h3{
 }
 
 .information{
+    margin-top: 0.5rem;
     background-color: yellow;
     position: absolute;
     top: 100%;
@@ -139,4 +140,8 @@ h3{
 
 .information h3{
     color: black;
+}
+
+.forever{
+    visibility: hidden;
 }
