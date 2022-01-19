@@ -1,3 +1,4 @@
+/* General Styles */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,14 +7,19 @@
 
 body{
     font-family: TFArrow, "Times New Roman", Times, Baskerville, Georgia, serif;
-    min-height: 200vh;
     width: 100%;
     background-color: black;
 }
 
 a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
+
+ul{
+    list-style-type: none;
+}
+
 /*========== First Section of the page which occupies first 100vh unit  of the page =========*/
 .first-section{
     height: 100vh;
@@ -38,12 +44,18 @@ header{
     top: 0;
     right: 0;
 }
-
+/* Div containing main logo of jumeirah and navigation buttons */
 .logo-tools{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
+}
+/* Main logo picture of the header */
+.main_logo{
+    height: 41.5px;
+    width: 130px;
+    font-weight: 200;
 }
 
 .navigation{
@@ -76,8 +88,8 @@ header{
 .navigation .active img{
     transform: rotate(90deg);
 }
-
-header button{
+/* Book now button */
+#booknow{
     background-color: #7c6f55;
     padding: 14px 33px;
     transition: background-color 0.2s linear;
@@ -87,7 +99,25 @@ header button{
 header button:hover{
     background-color: #615a4a;
 }
+/* Dropdown div from navigation links, in which various information will be displayed */
+.information{
+    margin-top: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    height: 600px;
+    width: 90%;
+    overflow-y: scroll;
+    padding: 0.5rem 1.5rem;
+}
 
+.information h3{
+    color: black;
+}
+
+ /* Stay different slogan in the middle of the first section and sub slogan under it */
 #slogan{
     font-size: 96px;
     color: white;
@@ -101,18 +131,15 @@ header button:hover{
     letter-spacing: 0.9px;
 }
 /* ====================================== Utility and Experiment Classes =====================*/
-img{
-    height: 41.5px;
-    width: 130px;
-    font-weight: 200;
-}
 
+/*
 h3{
     color: white;
     font-size: 22px;
     font-family: TFArrow, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
-
+*/
+/* This styles are used mainly for links and buttons in navigation bar */
 .button-font{
     color: white;
     font-family: TFArrow;
@@ -122,26 +149,78 @@ h3{
     letter-spacing: 2.33px;
     text-transform: uppercase;
 }
-
-.information{
-    margin-top: 0.5rem;
-    background-color: yellow;
-    position: absolute;
-    top: 100%;
-    right: 50%;
-    transform: translateX(50%);
-    height: 400px;
-    width: 90%;
-}
-
+/* Invisibility class, now being used for .information div only */
 .invisible{
     visibility: hidden;
 }
 
-.information h3{
-    color: black;
+/* Class for h3 element which will be displayed only when viewport falls below 1200px. (Temporary, as page is not responsive)*/
+.forever{
+    display: none;
 }
 
-.forever{
-    visibility: hidden;
+.second-section{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+/* Info container hotels */
+.info_container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+}
+
+.info_container h3{
+    font-size: 21px;
+    font-weight: 500;
+    color: rgb(143, 143, 143);
+    letter-spacing: 0.58px;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.3rem;
+}
+
+.info_container li, a{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 26.04px;
+    color: rgb(143, 143, 143);
+    letter-spacing: 0.58px;
+}
+
+.info_container li{
+    margin: 0.6rem 0;
+}
+
+.upper{
+    color: white;
+}
+
+.infoclose{
+    color: white;
+    font-size: 26px;
+    font-weight: 200;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    float: right;
+}
+
+.infoclose:hover{
+    background-color: transparent;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wrapper ul, .wrapper2 ul{
+    margin: 3rem 0;
 }

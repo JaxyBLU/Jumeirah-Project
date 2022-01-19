@@ -1,7 +1,3 @@
-const myLink = document.querySelectorAll('.expandable');
-const myBox = document.querySelector('.information');
-
-const hotelsContent = `
 <button class='infoclose'><i class="fas fa-times"></i></button>
 <div class="info_container">
     <div id="first">
@@ -69,39 +65,28 @@ const hotelsContent = `
     </div>
     <div id="third">
         <a href="https://www.jumeirah.com/en/collection/asia" target="_blank"><h3>Asia-Pacific</h3></a>
+        <div class="wrapper3">
+            <ul>
+                <li><a href="" class="upper">Bali</a></li>
+                <li><a href="">Coming Soon: Jumeirah Bali</a></li>
+            </ul>
+            <ul>
+                <li><a href="" class="upper">Guangzhou</a></li>
+                <li><a href="">Jumeirah Guangzhou</a></li>
+                <li><a href="">Jumeirah Living Guangzhou</a></li>
+            </ul>
+            <ul>
+                <li><a href="" class="upper">Maldives</a></li>
+                <li><a href="">Jumeirah Maldives Olhahali Island</a></li>
+            </ul>
+            <ul>
+                <li><a href="" class="upper">Nanjing</a></li>
+                <li><a href="">Jumeirah Nanjing</a></li>
+            </ul>
+            <ul>
+                <li><a href="" class="upper">Shanghai</a></li>
+                <li><a href="">Jumeirah Himalayas Hotel</a></li>
+            </ul>
+        </div>
     </div>
 </div>
-`;
-
-/* Functionality of Navigation Links and Dropdown Menu */
-myLink.forEach((item)=>{
-    item.addEventListener('click', (e)=>{
-        if(item.classList.contains('active')){
-            myLink.forEach((element) => element.classList.remove('active'));
-            myBox.classList.add('invisible');
-            return;
-        } else{
-            myLink.forEach((element) => element.classList.remove('active'));
-            item.classList.add('active');
-            myBox.classList.remove('invisible');
-            if(item.id == 'hotels'){myBox.innerHTML = hotelsContent;} else
-            if(item.id == 'lifestyle'){myBox.innerHTML = lifestyleContent;} else
-            if(item.id == 'loyalty'){myBox.innerHTML = loyaltyContent;}
-            const closingButtons = document.querySelectorAll('.infoclose');
-            closingButtons.forEach((item)=>{
-                item.addEventListener('click', ()=>{
-                    myLink.forEach((element) => element.classList.remove('active'));
-                    myBox.classList.add('invisible');
-                })
-            })
-        }
-    });
-})
-
-/*Event Listener For Closing '.information' div if user clicks outside of it *//*
-window.addEventListener('mouseup', function(event){
-    if(event.target != myBox && event.target.parentNode != myBox){
-        myBox.classList.add('invisible');
-        myLink.forEach((element) => element.classList.remove('active'));
-    }
-})*/

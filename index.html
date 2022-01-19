@@ -8,14 +8,16 @@
     <link rel="icon" type="image/x-icon" href="Assets/Images/favicon.ico">
     <script src="Scripts/scripts.js" defer></script>
     <title>Jumeirah Hotels & Resorts | Luxury Hotels Europe, Middle East & Asia | Jumeirah</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="Styles/mqueries.css">
 </head>
 <body>
+    <!-- This message is displayed only when the viewport falls below 1200px -->
     <h3 class="forever">Sorry, this page is not designed to be displayed on your device</h3>
     <section class="first-section">
         <header>
             <div class="logo-tools">
-                <a href="index.html"><img src="Assets/Images/jumeirah-logo.png" alt="Jumeirah Logo"></a>
+                <a href="index.html"><img src="Assets/Images/jumeirah-logo.png" alt="Jumeirah Logo" class="main_logo"></a>
                 <ul class="navigation">
                     <li class="button-font expandable" id="hotels"><a href="#"></a>HOTELS<img src="Assets/Images/arrow-pointer.png" alt=""></li>
                     <li class="button-font"><a href="#"></a>BURJ AL ARAB</li>
@@ -24,7 +26,7 @@
                     <li class="button-font expandable" id="loyalty"><a href="#"></a>LOYALTY<img src="Assets/Images/arrow-pointer.png" alt=""></li>
                 </ul>
             </div>
-            <button class="button-font">BOOK NOW</button>
+            <a href="https://www.jumeirah.com/en/booking/hotel-booking?bookingWithPoints=false"><button class="button-font" id="booknow">BOOK NOW</button></a>
             <!-- Information div is temporary, just to demonstrate dropdowm menu. Later it will be fixed -->
             <div class="information invisible">
                 <h3>Turdubek Zholdoshov</h3>
@@ -33,7 +35,11 @@
         <h1 id="slogan">Stay Different</h1>
         <h3 id="slogan_sub">Taking luxury hospitality to new heights</h3>
     </section>
+
+    <!--    Second section of the page which occupies next 100vh -->
+    <section class="second-section">
+        <h3>This is second section for now</h3>
+    </section>
 </body>
 </html>
-
 
