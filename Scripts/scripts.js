@@ -42,7 +42,7 @@ const hotelsContent = `
                         <li><a href="https://www.jumeirah.com/en/article/coming-soon/coming-soon-jumeirah-jabal-omar" target="_blank" class="upper">Saudi Arabia</a></li>
                         <li><a href="https://www.jumeirah.com/en/article/coming-soon/coming-soon-jumeirah-jabal-omar" target="_blank"></a>Coming soon: Jabal Omar Jumeirah</li>
                     </ul>
-                </div>>
+                </div>
             </div>
         </div>
         <div id="second">
@@ -97,7 +97,80 @@ const hotelsContent = `
 `;
 
 const lifestyleContent = `
-    <h3>Hello</h3>
+<button class='infoclose'><i class="fas fa-times"></i></button>
+<div class="info_container2">
+    <div class="infobox">
+        <img src="Assets/Images/lifestylecollectiondininghero__square.webp" alt="Jumeirah Dining" class="lifestyle_hero">
+        <h3>Dining</h3>
+        <a href="https://www.jumeirah.com/en/dine/f-and-b-inspiration-page" target="_blank">
+            <p class="button-font">dining inspiration <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+        <a href="https://www.jumeirah.com/en/dine/collection" target="_blank">
+            <p class="button-font">restaurant-listing <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+    </div>
+    <div class="infobox">
+        <img src="Assets/Images/lifestylecollectionwellnesshero__square.webp" alt="Jumeirah Wellness" class="lifestyle_hero">
+        <h3>Wellness</h3>
+        <a href="https://www.jumeirah.com/en/rejuvenate/spa-inspiration" target="_blank">
+            <p class="button-font">wellness inspiration <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+        <a href="https://www.jumeirah.com/en/rejuvenate/wellness-listing" target="_blank">
+            <p class="button-font">wellness listing <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+    </div>
+    <div class="infobox">
+        <img src="Assets/Images/lifestylecollectionoccasionhero__square.webp" alt="Jumeirah Occassions" class="lifestyle_hero">
+        <h3>Occasion</h3>
+        <a href="https://www.jumeirah.com/en/occasion/business-meetings/meeting-collection" target="_blank">
+            <p class="button-font">meetings & events <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+        <a href="https://www.jumeirah.com/en/occasion/weddings/wedding-collection" target="_blank">
+            <p class="button-font">weddings <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+    </div>
+    <div class="infobox">
+        <img src="Assets/Images/lifestylecollectionshophero__square.webp" alt="Jumeirah Shop" class="lifestyle_hero">
+        <h3>Shop</h3>
+        <a href="https://jumeirahgifts.com/hotels" target="_blank">
+            <p class="button-font">gift vouchers <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+    </div>
+    <div class="infobox">
+        <img src="Assets/Images/lifestylecollectionstorieshero__square.webp" alt="Jumeirah Stories" class="lifestyle_hero">
+        <h3>Stories</h3>
+        <a href="https://www.jumeirah.com/en/article/stories" target="_blank">
+            <p class="button-font">jumeirah journal <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+        <a href="https://www.jumeirah.com/en/jumeirah-group/press-centre/press-releases" target="_blank">
+            <p class="button-font">press releases <img src="Assets/Images/arrow-pointer.png" alt=""></p>
+        </a>
+    </div>
+</div>
+`;
+
+const loyaltyContent = `
+<button class='infoclose'><i class="fas fa-times"></i></button>
+<div class="info_container3">
+    <div class="infobox3">
+        <img src="Assets/Images/loyaltycollectionaboutjumeirahonehero__square.webp" alt="Jumeirah One">
+    </div>
+    <div class="infobox3">
+        <img src="Assets/Images/loyaltycollectioncollecthero__square.webp" alt="Jumeirah Collect">
+    </div>
+    <div class="infobox3">
+        <img src="Assets/Images/loyaltycollectionexchangehero__square.webp" alt="Jumeirah Exchange">
+    </div>
+    <div class="infobox3">
+        <img src="Assets/Images/loyaltycollectionpartnershero__square.webp" alt="Jumeirah Partners">
+    </div>
+    <div class="infobox3">
+        <img src="Assets/Images/loyaltycollectionoffershero__square.webp" alt="Jumeirah Offers">
+    </div>
+    <div class="infobox3">
+        <img src="Assets/Images/loyaltycollectionhelpsupporthero__square.webp" alt="Jumeirah Help & Support">
+    </div>
+</div>
 `;
 /* Functionality of Navigation Links and Dropdown Menu */
 myLink.forEach((item)=>{

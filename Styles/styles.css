@@ -108,69 +108,17 @@ header button:hover{
     top: 100%;
     right: 50%;
     transform: translateX(50%);
-    height: 600px;
-    width: 90%;
-    overflow-y: scroll;
-    z-index: 995;
+    max-height: 600px;
+    width: 95%;
+    overflow-y: auto;
     padding: 0.5rem 1.5rem;
-}
-
-.information h3{
-    color: black;
-}
-
- /* Stay different slogan in the middle of the first section and sub slogan under it */
-#slogan{
-    font-size: 96px;
-    color: white;
-    font-weight: 500;
-}
-
-#slogan_sub{
-    font-size: 32px;
-    font-weight: 500;
-    color: white;
-    letter-spacing: 0.9px;
-}
-/* ====================================== Utility and Experiment Classes =====================*/
-
-
-h3{
-    color: white;
-    font-size: 22px;
-    font-family: TFArrow, "Times New Roman", Times, Baskerville, Georgia, serif;
-}
-
-/* This styles are used mainly for links and buttons in navigation bar */
-.button-font{
-    color: white;
-    font-family: TFArrow;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 2.33px;
-    text-transform: uppercase;
-}
-/* Invisibility class, now being used for .information div only */
-.invisible{
-    visibility: hidden;
-}
-
-/* Class for h3 element which will be displayed only when viewport falls below 1200px. (Temporary, as page is not responsive)*/
-.forever{
-    display: none;
-}
-
-.second-section{
-    height: 100vh;
-    width: 100%;
-    background-color: aquamarine;
+    padding-bottom: 1rem;
 }
 
 /* Info container hotels */
 .info_container{
     width: 100%;
-    height: 100%;
+    height: 630px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 30px;
@@ -225,4 +173,111 @@ h3{
 
 .wrapper ul, .wrapper2 ul, .wrapper3 ul{
     margin-top: 1.5rem;
+}
+
+/* Styles for the infobox section of LIFESTYLE button */
+.info_container2{
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.infobox{
+    height: 280px;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-right: 2px solid hsla(0,0%,100%,.2);
+}
+
+.lifestyle_hero{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.infobox h3{
+    font-size: 32px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    margin-bottom: 14px;
+}
+
+.infobox p{
+    margin-bottom: 6px;
+}
+
+.infobox p img{
+    height: 12px;
+    width: 12px;
+    margin-left: 2px;
+}
+
+ /* Stay different slogan in the middle of the first section and sub slogan under it */
+#slogan{
+    font-size: 96px;
+    color: white;
+    font-weight: 500;
+}
+
+#slogan_sub{
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.9px;
+}
+/* ========================================== Utility and Experiment Classes ===================================================*/
+h3{
+    color: white;
+    font-size: 22px;
+    font-family: TFArrow, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+/* This styles are used mainly for links and buttons in navigation bar */
+.button-font{
+    color: white;
+    font-family: TFArrow;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2.33px;
+    text-transform: uppercase;
+}
+/* Invisibility class, now being used for .information div only */
+.invisible{
+    visibility: hidden;
+}
+
+/* Class for h3 element which will be displayed only when viewport falls below 1200px. 
+(Temporary, as page is not responsive)*/
+.forever{
+    display: none;
+}
+
+.second-section{
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.info_container3{
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+
+    background-color: tomato;
+}
+
+.infobox3{
+    height: 200px;
+    background-color: yellowgreen;
 }
