@@ -112,7 +112,6 @@ header button:hover{
     width: 95%;
     overflow-y: auto;
     padding: 0.5rem 1.5rem;
-    padding-bottom: 1rem;
 }
 
 /* Info container hotels */
@@ -122,6 +121,7 @@ header button:hover{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 30px;
+    border-bottom: 1px solid white;
 }
 
 .info_container h3{
@@ -185,14 +185,16 @@ header button:hover{
     gap: 10px;
 }
 
-.infobox{
+.infobox,
+.infobox3{
     height: 280px;
     padding: 0.5rem 0;
     text-align: center;
     border-right: 2px solid hsla(0,0%,100%,.2);
 }
 
-.lifestyle_hero{
+.lifestyle_hero,
+.loyalty_hero{
     height: 130px;
     width: 130px;
     border-radius: 50%;
@@ -209,14 +211,41 @@ header button:hover{
     margin-bottom: 14px;
 }
 
-.infobox p{
+.infobox p,
+.infobox3 p{
     margin-bottom: 6px;
 }
 
-.infobox p img{
+.infobox p img,
+.infobox3 p img{
     height: 12px;
     width: 12px;
     margin-left: 2px;
+}
+
+.info_container3{
+    width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.infobox3{
+    height: 240px;
+    text-align: center;
+}
+
+.joinnow{
+    display: block;
+    background-color:rgba(0, 0, 0, 0);
+    border: 2px solid rgb(124, 111, 85);
+    cursor: pointer;
+    height: 60px;
+    padding: 22px 49px;
+    margin: 25px auto;
+    width: 335px;
 }
 
  /* Stay different slogan in the middle of the first section and sub slogan under it */
@@ -266,18 +295,32 @@ h3{
     background-color: aquamarine;
 }
 
-.info_container3{
-    width: 100%;
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
+.hotels_footer{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 5px;
-
-    background-color: tomato;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    background-color: purple;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    height: 150px;
+    width: 100%;
 }
 
-.infobox3{
-    height: 200px;
+.showcase_mother{
     background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.showcase_mother img{
+    height: 80px;
+    width: 78px;
+    border-radius: 50%;
+    margin: 0 13px 0 0;
+}
+
+.showcase_mother h3{
+    font-size: 23.8px;
+    letter-spacing: 0.66px;
 }
