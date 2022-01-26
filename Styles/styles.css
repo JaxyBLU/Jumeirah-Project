@@ -24,10 +24,10 @@ ul{
 .first-section{
     height: 100vh;
     width: 100%;
-    background-image: url(../Assets/Images/pool-bg.jpg);
+    /*background-image: url(../Assets/Images/pool-bg.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 45vh 0 0 10rem;
+    padding: 45vh 80px 0 80px;
 }
 
 /*========= Header which contains logo and navigation buttons ===============================*/
@@ -217,7 +217,9 @@ header button:hover{
 }
 
 .infobox p img,
-.infobox3 p img{
+.infobox3 p img,
+.showcase_child p img,
+.trio-showcase img{
     height: 12px;
     width: 12px;
     margin-left: 2px;
@@ -237,6 +239,60 @@ header button:hover{
     text-align: center;
 }
 
+.hotels_footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    height: 150px;
+    width: 100%;
+}
+
+.showcase_mother{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.showcase_mother img{
+    height: 80px;
+    width: 78px;
+    border-radius: 50%;
+    margin: 0 13px 0 0;
+}
+
+.showcase_mother h3{
+    font-size: 23.8px;
+    letter-spacing: 0.66px;
+    line-height: 34.748px;
+}
+
+.trio-showcase{
+    margin: 110px auto 0 auto;
+    height: 100px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.trio_first_child,
+.trio_second_child{
+    border-right: 2px solid rgb(124, 111, 85);
+}
+
+.trio-showcase h3{
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.trio-showcase p{
+    text-align: center;
+}
+
 .joinnow{
     display: block;
     background-color:rgba(0, 0, 0, 0);
@@ -253,6 +309,7 @@ header button:hover{
     font-size: 96px;
     color: white;
     font-weight: 500;
+    padding-left: 10rem;
 }
 
 #slogan_sub{
@@ -260,6 +317,7 @@ header button:hover{
     font-weight: 500;
     color: white;
     letter-spacing: 0.9px;
+    padding-left: 10rem;
 }
 /* ========================================== Utility and Experiment Classes ===================================================*/
 h3{
@@ -295,32 +353,12 @@ h3{
     background-color: aquamarine;
 }
 
-.hotels_footer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    background-color: purple;
-    margin: 1rem 0;
-    padding: 0.5rem 0;
-    height: 150px;
+#bgr_video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
     width: 100%;
-}
-
-.showcase_mother{
-    background-color: yellowgreen;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-}
-
-.showcase_mother img{
-    height: 80px;
-    width: 78px;
-    border-radius: 50%;
-    margin: 0 13px 0 0;
-}
-
-.showcase_mother h3{
-    font-size: 23.8px;
-    letter-spacing: 0.66px;
+    z-index: -99;
 }
